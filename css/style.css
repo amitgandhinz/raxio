@@ -1,7 +1,14 @@
+/*
+color: #C50022; rackerRed 
+color: #DBFCFF; mario sky blue
+color: #5D94FB; mario blue
+color: #127C22; mario green
+color: #FFBAAA; mario pink
+color: #CC4B09; mario orange
+*/
+
 .jumbotron{
-	background-color: #272d37;
 	text-align: center;
-	color: #ccc;
 	margin: 0;
 }
 
@@ -10,21 +17,73 @@
 	font-size: 5em;
 }
 
-.light{
-	background-color: #ccc;
-	color: #333;
+#intro .jumbotron,
+#location .jumbotron{
+	background-color: #c50022; /* racker red */
+	color: #fff;
 }
 
-.white{
+#intro .row{
+	text-align: left;
+}
+
+.logo,
+.purchase,
+.main_title{
+	text-align: right;
+}
+
+.conf_name{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.theme_name{
+	font-family: 'Lobster', cursive;
+	font-size: 3em;
+}
+
+#speakers .jumbotron {
 	background-color: #fff;
-	color: #333;
+	color: #5D94FB; /* mario blue */
+}
+
+#schedule .jumbotron{
+	background-color: #5D94FB; /* mario blue */
+	color: #fff;
+}
+
+#tickets .jumbotron{
+	background-color: #DBFCFF; /* mario sky blue */
+	color: #127C22; /* mario green */
+}
+
+#contact .jumbotron {
+	background-color: #CC4B09;
+	color: #fff; /* mario blue */
+}
+#contact a{
+	color: #fff;
 }
 
 .nav{
 	text-transform: uppercase;
 }
 
-.btn-primary {
+.navbar-inverse{
+	background-color: #C50022; 
+	border-color: #C50022;
+}
+.navbar-inverse .navbar-brand {
+	color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #999;
+}
+
+.btn-default{
 	background-image: -webkit-gradient(linear,left 0,left 100%,from(#f0ad4e),to(#ec971f));
 	background-image: -webkit-linear-gradient(top,#f0ad4e,0%,#ec971f,100%);
 	background-image: -moz-linear-gradient(top,#f0ad4e 0,#ec971f 100%);
