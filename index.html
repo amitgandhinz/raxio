@@ -74,7 +74,7 @@
 					<div class="col-lg-8">
 						<p>Building on the thriving <strong>technical community</strong> within Rackspace, and the success of RAX.IO 2013, Rackspace presents <strong>RAX.IO 2014 - Level Up!</strong>!</p>
 
-						<p>A 3-day extravaganza to <strong>level up</strong> the Rackspace technical community. Syncing local and remote rackers and sharing idea's to <strong>level up</strong> every racker.</p>
+						<p>A 3-day extravaganza to <strong>Level Up!</strong> the Rackspace technical community. Syncing local and remote rackers and sharing idea's to <strong>Level Up!</strong> every racker.</p>
 					</div>
 					<div class="col-lg-4 purchase">
 						<p>
@@ -104,9 +104,104 @@
 			<p>
 				If you're pumped to take advantage of this opportunity but aren't sure whether "you fit", go ahead and <a href="#">apply right now</a>.
 	    	</p>
-	    	<a href="#" class="btn btn-primary btn-lg">Submit a Proposal</a>
+	    	<a href="#proposalApplication" class="btn btn-primary btn-lg" onclick="$('#thankyou').hide(); $('#proposalApplication').show();">Submit a Proposal</a>
 	    	<p><small>*Proposals from potential speakers must be submitted by November 15, 2014</small></p>
+
+	    	<div id="thankyou" class="alert alert-success" style="display: none;">Thank you.  Your proposal has been submitted.  You will be contacted in the next few days regarding your proposal.</div>
 	    </div>
+    </section>
+
+
+
+    <section id="proposalApplication" style="display: none;">
+
+    	<div class="container">
+	    	<h1>RAX.IO Proposal</h1>
+
+	    	<script type="text/javascript">var submitted=false;</script>
+			<iframe name="hidden_iframe" id="hidden_iframe"
+			style="display:none;" onload="if(submitted)
+			{$('#proposalApplication').hide(); $('#thankyou').show(); document.location = '#speakers' }"></iframe>
+
+			<form class="form-horizontal" role="form" action="https://docs.google.com/forms/d/1EfJjrOLRCDKfEPVKM6ltgLyyPgull2o6uXohhUzkXLQ/formResponse" method="post"
+	target="hidden_iframe" onsubmit="submitted=true;">
+
+				<div class="form-group">
+					<label for="entry.1071693051" class="col-lg-2 control-label">Name of Speaker</label>
+					<div class="col-lg-9">
+					  <input type="name" class="form-control" name="entry.1071693051" id="entry.1071693051" placeholder="Joe Racker">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="entry.398282150" class="col-lg-2 control-label">Racker Email</label>
+					<div class="col-lg-9">
+					  <input type="name" class="form-control" name="entry.398282150" id="entry.398282150" placeholder="joe.racker@rackspace.com">
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label for="entry.34233650" class="col-lg-2 control-label">Organization</label>
+					<div class="col-lg-9">
+					  <input type="name" class="form-control" name="entry.34233650" id="entry.34233650" placeholder="Product, Corp Dev, Private Cloud, Foundation/IT">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="entry_596946042" class="col-lg-2 control-label">Location</label>
+					<div class="col-lg-9">
+					  <input type="name" class="form-control" name="entry_596946042" id="entry_596946042" placeholder="The office location you call home. (eg, ATX, ATL, BLK, SAT, SFO, LON, Remote, ...)">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="entry_950617763" class="col-lg-2 control-label">Current Project(s)</label>
+					<div class="col-lg-9">
+					  <input type="name" class="form-control" name="entry_950617763" id="entry_950617763" placeholder="Product / Project / Speciality / Team (SubTeam)">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="entry.1034736605" class="col-lg-2 control-label">Proposal Title</label>
+					<div class="col-lg-9">
+					  <input type="name" class="form-control" name="entry.1034736605" id="entry.1034736605" placeholder="What clouds are made of.">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="entry.754260272" class="col-lg-2 control-label">Proposal Description</label>
+					<div class="col-lg-9">
+					  <input type="name" class="form-control" name="entry.754260272" id="entry.754260272" placeholder="Are clouds really made of tiny water droplets, or is there more to it? Find out here.">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="entry.799448001" class="col-lg-2 control-label">Proposal Length</label>
+					<div class="col-lg-9">
+					  	<select class="form-control" name="entry.799448001" id="entry_799448001">
+							<option value="45min Presentation">45min Presentation</option> 
+							<option value="15min TED Talk">15min TED Talk</option> 
+							<option value="5min Lightning Talk">5min Lightning Talk</option>
+						</select>
+					</div>
+				</div>
+
+				<p><small>* If your proposal isn't selected, there are still lightning talk slots and unconference and break-away sessions to share your knowledge, plus numerous tech talk programs around the Rack looking for speakers every week (yep, these proposals will be shared with tech talk organizers - woohoo!).</small></p>
+
+				<input type="hidden" name="draftResponse" value="[]">
+				<input type="hidden" name="pageHistory" value="0">
+			  
+				<div class="form-group">
+					<div class="col-lg-offset-2 col-lg-10">
+					  <input type="submit" name="submit" value="Submit Proposal" id="ss-submit" class="btn btn-lg btn-primary">
+					<button type="button" class="btn btn-link btn-lg" onclick="$('#proposalApplication').hide(); document.location = '#speakers' ">Cancel</button>
+
+					</div>
+				</div>
+			</form>
+
+		</div>
     </section>
 
     <section id="schedule">

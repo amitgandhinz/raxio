@@ -47,6 +47,11 @@ color: #CC4B09; mario orange
 	color: #5D94FB; /* mario blue */
 }
 
+#proposalApplication .container {
+	text-align: left;
+	padding-top: 50px;
+}
+
 #schedule .jumbotron{
 	background-color: #5D94FB; /* mario blue */
 	color: #fff;
@@ -106,4 +111,14 @@ img { max-width: none; }
 
 .glyphicon{
 	font-size: 10em;
+}
+
+#mario .jumbotron {
+	margin: auto;
+	height: 662px;
+	width: 100%;
+}
+#mario .jumbotron iframe{
+	width:100%;
+	height: 100%;
 }
