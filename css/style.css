@@ -58,8 +58,21 @@ color: #CC4B09; mario orange
 	background-color: #fff;
 	color: #5D94FB; /* mario blue */
 }
+#speakerimgs{
+	padding: 1em;
+}
 #speakerimgs img {
 	height: 10em;
+}
+
+#speakerimgs .img-wrap {
+	display: inline-block;
+	position: relative;
+	width: 310px;
+	height: 310px;
+	border-radius: 50em;
+	-webkit-border-radius: 50em;
+	border: 10px solid #ececec;
 }
 
 #proposalApplication .container {
@@ -81,7 +94,7 @@ color: #CC4B09; mario orange
 }
 #scheduletext p {
 	      text-align: left;
-//	      line-height: 1.2em;
+	      line-height: 1.2em;
 	      font-size: .9em;
 }
 
