@@ -61,9 +61,7 @@ color: #CC4B09; mario orange
 #speakerimgs{
 	padding: 1em;
 }
-#speakerimgs img {
-	height: 10em;
-}
+
 
 #speakerimgs .img-wrap {
 	display: inline-block;
