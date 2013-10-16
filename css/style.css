@@ -46,6 +46,9 @@ color: #CC4B09; mario orange
 	background-color: #fff;
 	color: #5D94FB; /* mario blue */
 }
+#speakerimgs img {
+	height: 10em;
+}
 
 #proposalApplication .container {
 	text-align: left;
