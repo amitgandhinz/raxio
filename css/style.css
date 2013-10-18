@@ -102,11 +102,15 @@ color: #57412F; mario brown
 
 #tickets .jumbotron{
 	color: #57412F; /* mario green */
-	background: #000 url('http://images.cdn.rackspace.com/home/river_bg.png');
+	background: #fff url('http://images.cdn.rackspace.com/home/river_bg.png');
 }
 #tickets img{
 	width: 10em;
 	text-align: center;
+}
+
+#ticket_faq{
+	text-align: left;
 }
 
 #contact .jumbotron {
