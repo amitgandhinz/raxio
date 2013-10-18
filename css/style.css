@@ -5,6 +5,7 @@ color: #5D94FB; mario blue
 color: #127C22; mario green
 color: #FFBAAA; mario pink
 color: #CC4B09; mario orange
+color: #57412F; mario brown
 */
 
 .jumbotron{
@@ -105,11 +106,14 @@ color: #CC4B09; mario orange
 }
 
 #contact .jumbotron {
-	background-color: #CC4B09;
-	color: #fff; /* mario blue */
+	background-color: #57412F;
+	color: #fff; 
 }
 #contact a{
 	color: #fff;
+}
+#contact img{
+	width: 10em;
 }
 
 .nav{
