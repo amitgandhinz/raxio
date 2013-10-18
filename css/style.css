@@ -100,6 +100,12 @@ color: #CC4B09; mario orange
 	background-color: #DBFCFF; /* mario sky blue */
 	color: #127C22; /* mario green */
 }
+#ticketsfaq {
+	    margin: 2em 6em;
+}
+#ticketsfaq p {
+	   text-align: left;
+}
 
 #contact .jumbotron {
 	background-color: #CC4B09;
