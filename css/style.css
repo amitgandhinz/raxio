@@ -59,7 +59,10 @@ color: #CC4B09; mario orange
 	color: #5D94FB; /* mario blue */
 }
 #speakerimgs{
-	padding: 1em;
+	padding: 0em;
+	white-space: nowrap;
+	overflow: scroll;
+	text-align: center;
 }
 
 
@@ -231,7 +234,8 @@ img { max-width: none; }
 }
 
 #schedule .item{
-	padding: 5em;
+	padding: 3em 5em;
+	text-align: left;
 }
 #schedule .item{
 	display: none;
