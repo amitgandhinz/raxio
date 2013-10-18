@@ -101,8 +101,8 @@ color: #57412F; mario brown
 }
 
 #tickets .jumbotron{
-	background-color: #DBFCFF; /* mario sky blue */
-	color: #127C22; /* mario green */
+	color: #57412F; /* mario green */
+	background: #000 url('http://images.cdn.rackspace.com/home/river_bg.png');
 }
 #tickets img{
 	width: 10em;
@@ -118,6 +118,11 @@ color: #57412F; mario brown
 }
 #contact img{
 	width: 10em;
+}
+
+.alert-info{
+	background-color: #5D94FB;
+	color: #fff;
 }
 
 .nav{
