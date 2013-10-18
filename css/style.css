@@ -104,6 +104,10 @@ color: #57412F; mario brown
 	background-color: #DBFCFF; /* mario sky blue */
 	color: #127C22; /* mario green */
 }
+#tickets img{
+	width: 10em;
+	text-align: center;
+}
 
 #contact .jumbotron {
 	background-color: #57412F;
