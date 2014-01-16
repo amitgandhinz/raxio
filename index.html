@@ -50,8 +50,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#tickets">Tickets</a></li>
             <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#tickets">Tickets</a></li>
             <li><a href="#location">Location</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -99,286 +99,141 @@
 			<div class="carousel slide">
 				<div class="btn-group" data-toggle="buttons">
 				  <label class="btn btn-default btn-lg" onclick="$('#schedule .item').removeClass('active'); $('#schedule .item1').addClass('active');">
-				    <input type="radio" name="options" id="option1">Keynotes and Plenary Sessions
+				    <input type="radio" name="options" id="option1">Estimated Schedule
 				  </label>
 				  <label class="btn btn-default btn-lg" onclick="$('#schedule .item').removeClass('active'); $('#schedule .item2').addClass('active');">
-				    <input type="radio" name="options" id="option2">Participant Driven Sessions
+				    <input type="radio" name="options" id="option2">Participant Driven Sessions, aka Unconference
 				  </label>
 				  <label class="btn btn-default btn-lg" onclick="$('#schedule .item').removeClass('active'); $('#schedule .item3').addClass('active');">
-				    <input type="radio" name="options" id="option3">Evening Events
-				  </label>
-				  <label class="btn btn-default btn-lg" onclick="$('#schedule .item').removeClass('active'); $('#schedule .item4').addClass('active');">
-				    <input type="radio" name="options" id="option4">Hackday
+				    <input type="radio" name="options" id="option3">Hotel and Shuttles
 				  </label>
 				  <label class="btn btn-default btn-lg" onclick="$('#schedule .item').removeClass('active'); $('#schedule .item5').addClass('active');">
-				    <input type="radio" name="options" id="option5">Live Streams
+				    <input type="radio" name="options" id="option5">Live Streams and Videos
 				  </label>
 				</div>
 
-				<div class="item active row item1">
-				    <div class="col-md-4">
-				    	<p>RAX.IO has 2 days of "blow your mind interesting you-can't-find-this-stuff-on-the-One-wiki" talks. RAX.IO needs everyone's help to make this happen: </p>
-				    	<a href="#proposalApplication" class="btn btn-default btn-lg" onclick="$('#thankyou').hide(); $('#proposalApplication').show();">Submit a Proposal</a>
-			    	</div>
-					<div class="col-md-4">
-						<p>This single talk track includes morning and evening keynotes from special guests inside and outside the company, as well as spontaneous lightning talk slots.</p>
-					</div>
-					<div class="col-md-4">
-						<p>In addition, RAX.IO has ideal break away spaces for small discussions and demos, both ad-hoc and via first come first serve daily signups.</p>
-					</div>
-				</div>
+<div class="item active row item1">
+  <div class="schedule-day">
+    <div class="schedule-date">Tuesday, Feb 25th</div>
+    <table><tbody>
+	<tr><td class="schedule-time">8 - 9</td><td class="schedule-description">Breakfast burritos and unconference creation</td></tr>
+	<tr><td class="schedule-time">9 - 12</td><td class="schedule-description">Opening keynote and plenary talks</td></tr>
+	<tr><td class="schedule-time">12 - 1:30</td><td class="schedule-description">Lunch, lightning talks, unconference schedule posted</td></tr>
+	<tr><td class="schedule-time">1:30 - 4:30</td><td>Talks and unconference sessions</td></tr>
+	<tr><td class="schedule-time">4:30 - 5</td><td class="schedule-description">TCT Process Transparency</td></tr>
+	<tr><td class="schedule-time">5 - 6:30</td><td class="schedule-description">Mixer</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="schedule-day">
+    <div class="schedule-date">Wednesday, Feb 26th</div>
+    <table><tbody>
+	<tr><td class="schedule-time">8 - 9</td><td class="schedule-description">Breakfast burritos and unconference creation</td></tr>
+	<tr><td class="schedule-time">9 - 12</td><td class="schedule-description">Keynote and plenary talks</td></tr>
+	<tr><td class="schedule-time">12 - 1:30</td><td class="schedule-description">Lunch, PGP Keysigning Party, unconference schedule posted</td></tr>
+	<tr><td class="schedule-time">1:30 - 4:30</td><td>Talks and unconference sessions</td></tr>
+	<tr><td class="schedule-time">4:30 - 5</td><td class="schedule-description">Mystery panel</td></tr>
+	<tr><td class="schedule-time">5 - 6:30</td><td class="schedule-description">Game night</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="schedule-day">
+    <div class="schedule-date">Thursday, Feb 27th</div>
+    <table><tbody>
+	<tr><td class="schedule-time">8 - 9</td><td class="schedule-description">Breakfast burritos and unconference creation</td></tr>
+	<tr><td class="schedule-time">9 - 12</td><td class="schedule-description">Keynote and plenary talks</td></tr>
+	<tr><td class="schedule-time">12 - 1:30</td><td class="schedule-description">Lunch, lightning talks, unconference schedule posted</td></tr>
+	<tr><td class="schedule-time">1:30 - 4:30</td><td>Talks and unconference sessions</td></tr>
+	<tr><td class="schedule-time">4:30 - 5</td><td class="schedule-description">Closing summary</td></tr>
+	<tr><td class="schedule-time">5 - 6:30</td><td class="schedule-description">Hack the Gibson</td></tr>
+    </tbody></table>
+  </div>
+
+  <div class="schedule-day">
+    <div class="schedule-date">Friday, Feb 28th</div>
+    <table><tbody>
+	<tr><td class="schedule-time">9 - 4</td><td class="schedule-description">Workshops and hackday</td></tr>
+	<tr><td class="schedule-time">4 - 5</td><td class="schedule-description">Show &amp; Tell and reflection</td></tr>
+    </tbody></table>
+  </div>
+</div>
 
 				<div class="item row item2">
 				    <div class="col-md-6">
-				    	<p>Now that we've gotten together, let's collaborate.</p>
-						<p>Each morning before the talks start, everyone posts unconference session proposals on The Unconference Bulletin Board and vote for their favorites.</p>
-					</div>
+				    	<p>Now that we're all here, let's collaborate.</p>
+					<p>Unconference planning and
+					voting time starts each
+					morning before the plenary
+					talks.</p>
+				    </div>
 				    <div class="col-md-6">
-				    	<p>A multi-track afternoon unconference schedule will be posted during lunch, with session slots running in lock-step with conference talks to make it easy to move between conference talks and unconference sessions.</p>
-			    	</div>
+				    	<p>A multi-track unconference
+				    	schedule is posted during
+				    	lunch, with session slots
+				    	running in lock-step with
+				    	conference talks to make it
+				    	easy to move between
+				    	conference talks and
+				    	unconference sessions.</p>
+			    	    </div>
 				</div>
 
 				<div class="item row item3">
 				    <div class="col-md-6">
-				    	<p>Half the fun of RAX.IO is meeting people in person and having informal discussions that energize and enhance one's point of view. At last year's RAX.IO retrospective, someone said that a cross-functional, cross-office networks discussion at dinner was more productive than all the problem solving of the past couple months.</p>
-					</div>
-				    <div class="col-md-6">
-				    	<p>There will be a late bus schedule for getting back to Austin, and a late night hack/game/hang room at the event hotel, and at least one festive evening keynote, too!</p>
-			    	</div>
+				    	<p>Information about the hotel, hotel shuttles and Austin shuttles will be posted soon.</p>
+				    </div>
 				</div>
 
 				<div class="item row item4">
 				    <div class="col-md-6">
-				    	<p>After two days of learning, sharing and relationship building, it's time to get down to the brass tacks and collaborate on code. The third and final day of RAX.IO is a Castle-wide hackday.</p>
-					</div>
-				    <div class="col-md-6">
-				    	<p>Make use of pair programming stations, join in at tutorials or ad-hoc whiteboard sessions, or find a corner to get in the zone.</p>
-			    	</div>
+				    	<p>After two days of learning, sharing and relationship building, it's time to get down to the brass tacks and collaborate on code. The fourth and final day of RAX.IO is a day of workshops and hacking. More details will be posted soon.</p>
+				    </div>
 				</div>
 
 				<div class="item row item5">
 				    <div class="col-md-6">
-				    	<p>All of the conference talks will be live streamed, with recordings uploaded to Racker TV afterwards.</p>
+				    	<p>Links to conference talk live streams and video recordings will be posted here.</p>
 					</div>
 				    <div class="col-md-6">
-				    	<p>Local Tech Crews will hold RAX.IO Re-Caps in each office to share take-aways and continue discussions locally.</p>
+				    	<p><b><a href="http://rax.io/localcrews">Local
+				    	Tech Crews</a></b> are holding
+				    	RAX.IO Re-Caps in each office
+				    	to share take-aways and
+				    	continue discussions
+				    	locally. Join (or create!)
+				    	your local crew and help make this happen.</p>
 			    	</div>
 				</div>
 
 	
     </section>
 
-	<section id="tickets">
-    	<div class="jumbotron">
-	    	<h1>Tickets</h1>
-	    	<img src="images/super-mario-coin.png" /><br/><br/>
-
-                <p>RAX.IO is for Rackers who build and maintain
-                Rackspace technology, infrastructure, and services:
-                software developers, quality engineers, system
-                operators, system administrators, UX designers,
-                product and technical managers, architects, solution
-                engineers and technical writers, to name a few
-                roles. However, passion is more important than rank or
-                job title. RAX.IO is for Rackers passionate about
-            	leveling up and raising up the people around them.</p>
-                <a href="https://raxio2014.eventbrite.com/" target="_blank" class="btn-orange btn-lg btn">Sign-up Today! (Seats are Limited)</a>
-                <p>
-                        * Free for Rackers. Remote Rackers will need to use department funds for conference travel and expenses.
-  						<a data-toggle="modal" href="#ticket_faq" class="btn btn-primary btn-lg">Read the FAQ's</a>
-                </p>
-
-                <div  id="ticket_faq" role="dialog"  class="modal fade">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				        <h4 class="modal-title">Ticket FAQ</h4>
-				      </div>
-				      <div class="modal-body">
-				        <h3>If I fill out the application am I registered and good to go?</h3>
-		                <p>Not quite. We have the go-ahead for 200
-		                Rackers. 
-		                <p>What if more than 200 Rackers sign-up?  Many
-		                conferences use first-come-first-serve to determine
-		                attendance.</p>
-		                <p>RAX.IO is not your normal conference. The application form, specifically the teams
-		                question, will be used to ensure that a diverse
-		                spectrum of people from across the company are able to
-		                come together.</p>
-				<p>That said, there are plenty of
-				spots still open, so if you're
-				interested in coming, go ahead and
-				apply. We want you to come!</p>
-
-		                <h3>What Business Units are eligible?</h3>
-		                <p>Last year was a huge success, so we're doubling in
-		                size and quadrupling business units. We're interested
-		                in representatives from every technology team within
-		                Product, Corp Dev, Private Cloud and
-		                Foundation/IT.</p>
-		                <p>Business unit leaders of technical Rackers in SMB,
-		                ENTerprise and INTernational are selecting Rackers to
-		                fulfill limited guest slots. Please speak with your
-		                manager if you're interested and as well as sign-up.</p>
-
-		                <h3>Team representatives and nominations?</h3>
-		                <p>A primary goal of RAX.IO is diversity. This makes
-		                knowledge exchanges and relationship building more interesting and useful post-RAX.IO.</p>
-		                <p>Therefore, in determining attendance, a large
-		                factor is seeking representatives from every product,
-		                project, speciality, team and subteam across the
-		                Rackspace technical community. This is not an exact
-		                science but a spirited striving.</p>
-		                <p>Because we don't know all the teams, subteams,
-		                projects, etc in each BU, we'll need your help on the
-		                application to explain. Use the concepts that make the
-		                most sense to you. It's ok to be on multiple
-		                teams. It's ok to be on a subteam, or not.</p>
-		                <p>After the application deadline, we may ask your
-		                team to nominate representatives. Sometimes the people
-		                closer to a situation have the best answer. Limited
-		                capacity is tough, but since RAX.IO is for Rackers, by
-		                Rackers, at least we're all working together on this
-		                one. Ultimately, we believe this
-		                apply-first-nominate-as-needed process will result in
-		                the best outcome, which includes not only meeting the
-		                immediate goals of RAX.IO, but also an increasingly
-		                inclusive, accessible and highly performant
-		                distributed technical community.</p>
-		                <h3>When will I know if I'm accepted?</h3>
-		                <p>RAX.IO speakers and attendees will be announced by early December.</p>
-				      </div>
-				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-				      </div>
-				    </div><!-- /.modal-content -->
-				  </div><!-- /.modal-dialog -->
-				</div><!-- /.modal -->
-
-	    </div>
-    </section>
-
     <section id="speakers">
     	<div class="jumbotron">
 	    	<h1>Speakers</h1>
-	    	<div class="alert alert-info">RAX.IO NEEDS SPEAKERS! This could be you.</div> 
-			<div id="speakerimgs">
-				<figure class="img-wrap" style="background:url(images/speakerexample_amit.jpg) no-repeat center center; background-size: 300px;"></figure>
-				<figure class="img-wrap" style="background:url(images/speakerexample_june.jpg) no-repeat center center; background-size: 500px;"></figure>
-				<figure class="img-wrap" style="background:url(images/speakerexample_troy.jpg) no-repeat center center; background-size: 500px"></figure>
-				<figure class="img-wrap" style="background:url(images/speakerexample_alej.jpg) no-repeat center center; background-size: 400px"></figure>
-				<figure class="img-wrap" style="background:url(images/speakerexample_alex.jpg) no-repeat center center; background-size: 400px"></figure>
-			</div>
-
-			<div>RAX.IO need's your help to make this happen!</div>
-
-	    	<a href="#proposalApplication" class="btn btn-primary btn-lg" onclick="$('#thankyou').hide(); $('#proposalApplication').show();">Submit a Proposal</a>
-	    	<p><small>*Proposal deadline is November 22, 2013</small></p>
-
-	    	<div id="thankyou" class="alert alert-success" style="display: none;">Thank you.  Your proposal has been submitted.  We will be in touch by early December. <br /> If you have any questions or concerns before then, please email crew@lists.rackspace.com</div>
-	    </div>
-    </section>
-
-
-
-    <section id="proposalApplication" style="display: none;">
-    	<div class="container">
-	    	<h1>RAX.IO Proposal</h1>
-
-	    	<script type="text/javascript">var submitted=false;</script>
-			<iframe name="hidden_iframe" id="hidden_iframe"
-			style="display:none;" onload="if(submitted)
-			{$('#proposalApplication').hide(); $('#thankyou').show(); document.location = '#speakers' }"></iframe>
-
-			<form class="form-horizontal" role="form" action="https://docs.google.com/forms/d/1EfJjrOLRCDKfEPVKM6ltgLyyPgull2o6uXohhUzkXLQ/formResponse" method="post"
-	target="hidden_iframe" onsubmit="submitted=true;">
-
-				<div class="form-group">
-					<label for="entry.1071693051" class="col-lg-2 control-label">Name of Speaker</label>
-					<div class="col-lg-9">
-					  <input type="name" class="form-control" name="entry.1071693051" id="entry.1071693051" placeholder="Joe Racker">
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="entry.398282150" class="col-lg-2 control-label">Racker Email</label>
-					<div class="col-lg-9">
-					  <input type="name" class="form-control" name="entry.398282150" id="entry.398282150" placeholder="joe.racker@rackspace.com">
-					</div>
-				</div>
-
-
-				<div class="form-group">
-					<label for="entry.34233650" class="col-lg-2 control-label">Organization</label>
-					<div class="col-lg-9">
-					  <input type="name" class="form-control" name="entry.34233650" id="entry.34233650" placeholder="Product, Corp Dev, Private Cloud, Foundation/IT">
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="entry_596946042" class="col-lg-2 control-label">Location</label>
-					<div class="col-lg-9">
-					  <input type="name" class="form-control" name="entry_596946042" id="entry_596946042" placeholder="The office location you call home. (eg, ATX, ATL, BLK, SAT, SFO, LON, Remote, ...)">
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="entry_950617763" class="col-lg-2 control-label">Current Project(s)</label>
-					<div class="col-lg-9">
-					  <input type="name" class="form-control" name="entry_950617763" id="entry_950617763" placeholder="Product / Project / Speciality / Team (SubTeam)">
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="entry.1034736605" class="col-lg-2 control-label">Proposal Title</label>
-					<div class="col-lg-9">
-					  <input type="name" class="form-control" name="entry.1034736605" id="entry.1034736605" placeholder="What clouds are made of.">
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="entry.754260272" class="col-lg-2 control-label">Proposal Description</label>
-					<div class="col-lg-9">
-					  <textarea type="name" class="form-control" name="entry.754260272" id="entry.754260272" placeholder="Please provide the Selection Committee with a detailed description of your talk, including bullet points of what you plan to cover." rows=20></textarea>
-					</div>
-				</div>
-
-				<div class="form-group">
-					<label for="entry.799448001" class="col-lg-2 control-label">Proposal Length</label>
-					<div class="col-lg-9">
-					  	<select class="form-control" name="entry.799448001" id="entry_799448001">
-							<option value="45min Presentation">45min Presentation</option> 
-							<option value="15min TED Talk">15min TED Talk</option> 
-							<option value="5min Lightning Talk">5min Lightning Talk</option>
-						</select>
-					</div>
-				</div>
-
-				<p><small>* If your proposal isn't selected, there are still lightning talk slots and unconference and break-away sessions to share your knowledge, plus numerous <a href="http://rax.io/techtalks">tech talk programs</a> around the Rack looking for speakers every week (yep, these proposals will be shared with tech talk organizers - woohoo!).</small></p>
-
-				<input type="hidden" name="draftResponse" value="[]">
-				<input type="hidden" name="pageHistory" value="0">
-			  
-				<div class="form-group">
-					<div class="col-lg-offset-2 col-lg-10">
-					  <input type="submit" name="submit" value="Submit Proposal" id="ss-submit" class="btn btn-lg btn-primary">
-					<button type="button" class="btn btn-link btn-lg" onclick="$('#proposalApplication').hide(); document.location = '#speakers' ">Cancel</button>
-
-					</div>
-				</div>
-			</form>
-
+		<div id="speakerlist">
+		  <a href="https://one.rackspace.com/display/Engineering/Speaker+and+Session+Info">info</a>
 		</div>
+	</div>
     </section>
 
-    
+	<section id="tickets">
+    	<div class="jumbotron">
+	  <h1>Tickets</h1>
+	  <img src="images/super-mario-coin.png" /><br/><br/>
+	  <p>Registration is closed. 300 technical Rackers from across
+	  the globe, from every area of engineering and experience,
+	  are preparing for RAX.IO as we speak. Email
+	  lucy.mendel@rackspace.com if you are not sure of your
+	  status.</p>
+	</div>
+    </section>
 
     <section id="location">
     	<div class="jumbotron">
 			<div class="container">
 				<h1>Location</h1>
-				<h2>San Antonio Texas</h2>
+				<h2>The Castle in San Antonio Texas</h2>
 	    		<span class="glyphicon glyphicon-map-marker"></span>
 
 				<p>The new <strong>Event Center</strong>, inside <strong>Rackspace Global Headquarters</strong> (Castle), situated by the main entrance.</p>
