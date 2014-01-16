@@ -45,6 +45,10 @@ color: #57412F; mario brown
 	color: #000;
 }
 
+#signupbtn {
+	   cursor: inherit;
+}
+
 
 .conf_name{
 	font-family: 'Open Sans', sans-serif;
