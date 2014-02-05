@@ -1,3 +1,11 @@
+.moved {
+       text-align: center;
+       margin: auto;
+       padding: .8em 0em;
+       font-size: 3em;
+       font-weight: bold;
+}
+
 /*
 color: #C50022; rackerRed 
 color: #DBFCFF; mario sky blue

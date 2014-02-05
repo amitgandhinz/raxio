@@ -13,257 +13,30 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-    <script>
-	    var map;
-		function initialize() {
-			var mapOptions = {
-			    zoom: 17,
-			    center: new google.maps.LatLng(29.509, -98.394),
-			    mapTypeId: google.maps.MapTypeId.ROADMAP,
-			    scrollwheel: false
-		  	};
-		  
-		  	map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-		}
-
-		google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
   </head>
   <body>
-  	<div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">RAX.IO</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#speakers">Speakers</a></li>
-            <li><a href="#tickets">Tickets</a></li>
-            <li><a href="#location">Location</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
-
     <section id="intro">
-	    <div class="jumbotron">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-4 logo">
-						<img src="images/super-mario-bros.png" />
-					</div>
-					<div class="col-lg-8 main_title">
-						<h1 class="conf_name">RAX.IO 2014</h1>
-						<h2 class="theme_name">Level Up!</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-8">
-						<p>Building on the thriving <strong>technical community</strong> within Rackspace, and the success of RAX.IO 2013, Rackspace presents <strong>RAX.IO 2014 - Level Up!</strong>!</p>
-<div id="raxiois" class="hidden-xs">
-<p id="raxiois1">RAX.IO is a series of presentations, discussions, and workshops to help Rackers build better, stronger, faster technical teams.</p>
-<p id="raxiois2">RAX.IO is a marketplace where people freely move between sessions and conversations: listening, sharing, and shopping for information and ideas they are interested in.</p>
-<p id="raxiois3">RAX.IO is a summit, festival, extravaganza, barnraising, conference, unconference, amazing experience created by Rackers, for Rackers.</p>
-</div>
-					</div>
-					<div class="col-lg-4 purchase">
-						<p>
-							<strong>The Castle</strong>
-							<h2>FEB 25 - 28, 2014</h2>
-							<p class="btn-orange btn-lg btn" id="signupbtn">Sign-ups are closed</p>
-						</p>
-					</div>
-				</div>
-			</div>
+      <div class="jumbotron">
+	<div class="container">
+
+	  <div class="row">
+	    <div class="col-lg-4 logo">
+	      <a href="http://rax.io/2014">
+		<img src="images/super-mario-bros.png" />
+	      </a>
 	    </div>
-	</section>
-
-	<section id="schedule">
-    	<div class="jumbotron">
-	    	<h1>Schedule</h1>
-
-			<div class="carousel slide">
-				<div class="btn-group" data-toggle="buttons">
-				  <label class="btn btn-default btn-lg" onclick="$('#schedule .item').removeClass('active'); $('#schedule .item1').addClass('active');">
-				    <input type="radio" name="options" id="option1">Estimated Schedule
-				  </label>
-				  <label class="btn btn-default btn-lg" onclick="$('#schedule .item').removeClass('active'); $('#schedule .item2').addClass('active');">
-				    <input type="radio" name="options" id="option2">Participant Driven Sessions, aka Unconference
-				  </label>
-				  <label class="btn btn-default btn-lg" onclick="$('#schedule .item').removeClass('active'); $('#schedule .item3').addClass('active');">
-				    <input type="radio" name="options" id="option3">Hotel and Shuttles
-				  </label>
-				  <label class="btn btn-default btn-lg" onclick="$('#schedule .item').removeClass('active'); $('#schedule .item5').addClass('active');">
-				    <input type="radio" name="options" id="option5">Live Streams and Videos
-				  </label>
-				</div>
-
-<div class="item active row item1">
-  <div class="schedule-day">
-    <div class="schedule-date">Tuesday, Feb 25th</div>
-    <table><tbody>
-	<tr><td class="schedule-time">8 - 9</td><td class="schedule-description">Breakfast burritos and unconference creation</td></tr>
-	<tr><td class="schedule-time">9 - 12</td><td class="schedule-description">Opening keynote and plenary talks</td></tr>
-	<tr><td class="schedule-time">12 - 1:30</td><td class="schedule-description">Lunch, lightning talks, unconference schedule posted</td></tr>
-	<tr><td class="schedule-time">1:30 - 4:30</td><td>Talks and unconference sessions</td></tr>
-	<tr><td class="schedule-time">4:30 - 5</td><td class="schedule-description">TCT Process Transparency</td></tr>
-	<tr><td class="schedule-time">5 - 6:30</td><td class="schedule-description">Mixer</td></tr>
-    </tbody></table>
-  </div>
-
-  <div class="schedule-day">
-    <div class="schedule-date">Wednesday, Feb 26th</div>
-    <table><tbody>
-	<tr><td class="schedule-time">8 - 9</td><td class="schedule-description">Breakfast burritos and unconference creation</td></tr>
-	<tr><td class="schedule-time">9 - 12</td><td class="schedule-description">Keynote and plenary talks</td></tr>
-	<tr><td class="schedule-time">12 - 1:30</td><td class="schedule-description">Lunch, PGP Keysigning Party, unconference schedule posted</td></tr>
-	<tr><td class="schedule-time">1:30 - 4:30</td><td>Talks and unconference sessions</td></tr>
-	<tr><td class="schedule-time">4:30 - 5</td><td class="schedule-description">Mystery panel</td></tr>
-	<tr><td class="schedule-time">5 - 6:30</td><td class="schedule-description">Game night</td></tr>
-    </tbody></table>
-  </div>
-
-  <div class="schedule-day">
-    <div class="schedule-date">Thursday, Feb 27th</div>
-    <table><tbody>
-	<tr><td class="schedule-time">8 - 9</td><td class="schedule-description">Breakfast burritos and unconference creation</td></tr>
-	<tr><td class="schedule-time">9 - 12</td><td class="schedule-description">Keynote and plenary talks</td></tr>
-	<tr><td class="schedule-time">12 - 1:30</td><td class="schedule-description">Lunch, lightning talks, unconference schedule posted</td></tr>
-	<tr><td class="schedule-time">1:30 - 4:30</td><td>Talks and unconference sessions</td></tr>
-	<tr><td class="schedule-time">4:30 - 5</td><td class="schedule-description">Closing summary</td></tr>
-	<tr><td class="schedule-time">5 - 6:30</td><td class="schedule-description">Hack the Gibson</td></tr>
-    </tbody></table>
-  </div>
-
-  <div class="schedule-day">
-    <div class="schedule-date">Friday, Feb 28th</div>
-    <table><tbody>
-	<tr><td class="schedule-time">9 - 4</td><td class="schedule-description">Workshops and hackday</td></tr>
-	<tr><td class="schedule-time">4 - 5</td><td class="schedule-description">Show &amp; Tell and reflection</td></tr>
-    </tbody></table>
-  </div>
-</div>
-
-				<div class="item row item2">
-				    <div class="col-md-6">
-				    	<p>Now that we're all here, let's collaborate.</p>
-					<p>Unconference planning and
-					voting time starts each
-					morning before the plenary
-					talks.</p>
-				    </div>
-				    <div class="col-md-6">
-				    	<p>A multi-track unconference
-				    	schedule is posted during
-				    	lunch, with session slots
-				    	running in lock-step with
-				    	conference talks to make it
-				    	easy to move between
-				    	conference talks and
-				    	unconference sessions.</p>
-			    	    </div>
-				</div>
-
-				<div class="item row item3">
-				    <div class="col-md-6">
-				    	<p>Information about the hotel, hotel shuttles and Austin shuttles will be posted soon.</p>
-				    </div>
-				</div>
-
-				<div class="item row item4">
-				    <div class="col-md-6">
-				    	<p>After two days of learning, sharing and relationship building, it's time to get down to the brass tacks and collaborate on code. The fourth and final day of RAX.IO is a day of workshops and hacking. More details will be posted soon.</p>
-				    </div>
-				</div>
-
-				<div class="item row item5">
-				    <div class="col-md-6">
-				    	<p>Links to conference talk live streams and video recordings will be posted here.</p>
-					</div>
-				    <div class="col-md-6">
-				    	<p><b><a href="http://rax.io/localcrews">Local
-				    	Tech Crews</a></b> are holding
-				    	RAX.IO Re-Caps in each office
-				    	to share take-aways and
-				    	continue discussions
-				    	locally. Join (or create!)
-				    	your local crew and help make this happen.</p>
-			    	</div>
-				</div>
-
+	    <div class="col-lg-8 main_title">
+	      <h1 class="conf_name">RAX.IO 2014</h1>
+	      <h2 class="theme_name">Level Up!</h2>
+	    </div>
+	  </div>
+	</div>
+      </div>
 	
+      <div class="moved">
+	<a href="http://rax.io/2014">This website has moved to the One Wiki</br>http://rax.io/2014</a>
+      </div>
+
     </section>
-
-    <section id="speakers">
-    	<div class="jumbotron">
-	    	<h1>Speakers</h1>
-		<div id="speakerlist">
-		  <a href="https://one.rackspace.com/display/Engineering/Speaker+and+Session+Info">info</a>
-		</div>
-	</div>
-    </section>
-
-	<section id="tickets">
-    	<div class="jumbotron">
-	  <h1>Tickets</h1>
-	  <img src="images/super-mario-coin.png" /><br/><br/>
-	  <p>Registration is closed. 300 technical Rackers from across
-	  the globe, from every area of engineering and experience,
-	  are preparing for RAX.IO as we speak. Email
-	  lucy.mendel@rackspace.com if you are not sure of your
-	  status.</p>
-	</div>
-    </section>
-
-    <section id="location">
-    	<div class="jumbotron">
-			<div class="container">
-				<h1>Location</h1>
-				<h2>The Castle in San Antonio Texas</h2>
-	    		<span class="glyphicon glyphicon-map-marker"></span>
-
-				<p>The new <strong>Event Center</strong>, inside <strong>Rackspace Global Headquarters</strong> (Castle), situated by the main entrance.</p>
-				<address>
-					1 Fanatical Place,
-					City of Windcrest,
-					San Antonio, TX 78218
-				</address>
-			</div>
-	    </div>
-	</section>
-	<div id="map-canvas" class="google-map-canvas">
-	</div>
-
-
-    
-    <section id="contact">
-    	<div class="jumbotron">
-	    	<h1>Contact</h1>
-	    	<img src="images/super-mario-bros-mushroom.png" />
-	    	<address>
-	    		<name><a href="http://rax.io/crew">Rackspace Crew</a></name>
-	    		<address><a href="mailto:crew@lists.rackspace.com">mailto:crew@lists.rackspace.com</a></address>
-	    	</address>
-	    </div>
-    </section>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
